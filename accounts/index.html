@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>账户相关 | API文档管理</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://deepexweb.s3-ap-northeast-1.amazonaws.com/upload/20210701185016801.png">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.1fffbea2.css" as="style"><link rel="preload" href="/assets/js/app.44a7d390.js" as="script"><link rel="preload" href="/assets/js/2.e6da7ca8.js" as="script"><link rel="preload" href="/assets/js/10.2173078f.js" as="script"><link rel="prefetch" href="/assets/js/11.5e613373.js"><link rel="prefetch" href="/assets/js/12.ab603d01.js"><link rel="prefetch" href="/assets/js/13.a1c2ba46.js"><link rel="prefetch" href="/assets/js/14.9a44f6e5.js"><link rel="prefetch" href="/assets/js/3.f166dd89.js"><link rel="prefetch" href="/assets/js/4.eb55547e.js"><link rel="prefetch" href="/assets/js/5.0155e4de.js"><link rel="prefetch" href="/assets/js/6.264b65e8.js"><link rel="prefetch" href="/assets/js/7.2a124fdc.js"><link rel="prefetch" href="/assets/js/8.525b4738.js"><link rel="prefetch" href="/assets/js/9.e925d055.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fffbea2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="API文档管理" class="logo"> <span class="site-name can-hide">API文档管理</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/Introduction/" class="sidebar-link">介绍</a></li><li><a href="/Quickstart/" class="sidebar-link">快速开始</a></li><li><a href="/apiintro/" class="sidebar-link">API接入说明</a></li><li><a href="/accounts/" aria-current="page" class="active sidebar-link">账户相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/accounts/#资产余额" class="sidebar-link">资产余额</a></li></ul></li><li><a href="/order/" class="sidebar-link">订单相关</a></li><li><a href="/market/" class="sidebar-link">行情相关</a></li><li><a href="/websocket/" class="sidebar-link">Websocket行情数据</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="账户相关"><a href="#账户相关" class="header-anchor">#</a> 账户相关</h1> <h2 id="资产余额"><a href="#资产余额" class="header-anchor">#</a> 资产余额</h2> <p>获取用户资产余额</p> <h3 id="http请求"><a href="#http请求" class="header-anchor">#</a> HTTP请求:</h3> <ul><li>GET /open/api/user/account</li></ul> <blockquote><p>响应</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;suc&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;total_asset&quot;</span><span class="token operator">:</span><span class="token number">16822</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;coin_list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span><span class="token string">&quot;btc&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;normal&quot;</span><span class="token operator">:</span><span class="token number">32323.233</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;locked&quot;</span><span class="token operator">:</span><span class="token number">32323.233</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;btcValuatin&quot;</span><span class="token operator">:</span><span class="token number">112.33</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span><span class="token string">&quot;ltc&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;normal&quot;</span><span class="token operator">:</span><span class="token number">68.2</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;locked&quot;</span><span class="token operator">:</span><span class="token number">69.2</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;btcValuatin&quot;</span><span class="token operator">:</span><span class="token number">112.33</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>       
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="请求参数"><a href="#请求参数" class="header-anchor">#</a> 请求参数</h3> <table><thead><tr><th>参数</th> <th>填写类型</th> <th>说明</th></tr></thead> <tbody><tr><td>api_key</td> <td>必填</td> <td>api_key</td></tr> <tr><td>time</td> <td>必填</td> <td>时间戳</td></tr> <tr><td>sign</td> <td>必填</td> <td>签名</td></tr></tbody></table> <h3 id="响应数据"><a href="#响应数据" class="header-anchor">#</a> 响应数据</h3> <table><thead><tr><th>字段</th> <th>实例</th> <th>解释</th></tr></thead> <tbody><tr><td>code</td> <td>0</td> <td></td></tr> <tr><td>msg</td> <td>&quot;suc&quot;</td> <td>code&gt;0失败</td></tr> <tr><td>data</td> <td>如上图:</td> <td></td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/apiintro/" class="prev">
+        API接入说明
+      </a></span> <span class="next"><a href="/order/">
+        订单相关
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.44a7d390.js" defer></script><script src="/assets/js/2.e6da7ca8.js" defer></script><script src="/assets/js/10.2173078f.js" defer></script>
+  </body>
+</html>
