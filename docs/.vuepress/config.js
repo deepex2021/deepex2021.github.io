@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/deepex-api/",
+  base: "/",
   markdown: {
     lineNumbers: true,
   },
