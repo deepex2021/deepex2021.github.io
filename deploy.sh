@@ -21,10 +21,10 @@ git commit -m 'deploy'
 
 
 # 如果发布到 https://<USERNAME>.github.io
-  git push -f https://github.com/deepex2021/deepex2021.github.io.git master
+git push -f https://github.com/deepex2021/deepex2021.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-#  git push -f  https://github.com/deepex2021/deepex2021.git mater:gh-pages
+# git push -f  https://github.com/deepex2021/deepex-api.git master:gh-pages
 
 cd -
 
