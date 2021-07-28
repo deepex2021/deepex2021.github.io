@@ -12,7 +12,7 @@ wss://ws.deepex.live/kline-api/ws
 WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 client 在收到数据之后解压。
 
 ### 心跳消息
-当用户的Websocket客户端连接到DEEP的Websocket服务器后，服务器会定期（当前设为5秒）向其发送ping消息并包含一整数值如右：
+当用户的Websocket客户端连接到DEEP的Websocket服务器后，服务器会定期（当前设为5秒）向其发送ping消息并包含一整数值如下：
 
 `
 {"ping": 1595935723334}
@@ -53,7 +53,7 @@ WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 cli
 ```
 
 ### 订阅主题
-成功建立与Websocket服务器的连接后，Websocket客户端发送如右请求以订阅特定主题。
+成功建立与Websocket服务器的连接后，Websocket客户端发送如下请求以订阅特定主题。
 
 `
 {

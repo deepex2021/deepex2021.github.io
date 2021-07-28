@@ -259,7 +259,7 @@ curl https://openapi.deepex.live/open/api/market
 | ---- | ------------------------------- | ---------- |
 | code | 0                               |
 | msg  | "suc"                           | code>0失败 |
-| data | 如右: |
+| data | 如上图 |
 
 
 
